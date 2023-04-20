@@ -10,6 +10,7 @@ import javascript from "../assets/icons/javascript-color.svg";
 import html from "../assets/icons/html5-color.svg";
 import css from "../assets/icons/css3-color.svg";
 import expo from "../assets/icons/expo-color.svg";
+import sentry from "../assets/icons/sentry-color.svg";
 
 interface IconsURL {
   [key: string]: string;
@@ -29,6 +30,7 @@ const iconsURL = {
   android: android,
   ios: apple,
   web: web,
+  sentry: sentry,
 } satisfies IconsURL;
 
 export default iconsURL;
