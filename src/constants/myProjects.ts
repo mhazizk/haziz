@@ -48,6 +48,8 @@ const myProjects = [
       "React Native",
       "Expo",
       "Javascript",
+      "Typescript",
+      "Sentry",
       "Firebase",
       "Google Cloud Platform",
     ],
