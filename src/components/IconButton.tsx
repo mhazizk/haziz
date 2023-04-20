@@ -1,6 +1,6 @@
 import React from "react";
 import { RxOpenInNewWindow } from "react-icons/rx";
-import { FaGithub, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
 
 interface IconButtonProps {
@@ -16,6 +16,10 @@ const IconButton: React.FC<IconButtonProps> = ({ icon, url }) => {
       break;
     case "twitter":
       SelectedIcon = <FaTwitter size={36} />;
+      break;
+    case "linkedin":
+      SelectedIcon = <FaLinkedin size={36} />;
+      break;
   }
 
   return (
