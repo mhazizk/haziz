@@ -9,6 +9,8 @@ import TechStack from "@/components/TechStack";
 import Projects from "@/components/Projects";
 import Head from "next/head";
 import HelloWorld from "@/sections/HelloWorld";
+import Footer from "@/components/Footer";
+import ComingSoon from "@/components/ComingSoon";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +24,8 @@ export default function Home() {
       <main className="flex flex-col overflow-x-hidden overflow-y-hidden">
         <HelloWorld />
         <Projects />
+        <ComingSoon />
+        <Footer />
       </main>
     </>
     // </main>
