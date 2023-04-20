@@ -1,8 +1,24 @@
+import IconButton from "@/components/IconButton";
 import TypingAnimation from "@/components/TypingAnimation";
 import React from "react";
 // import burning from "/burning.webm";
 
 const HelloWorld = () => {
+  const privateLinks = [
+    {
+      name: "github",
+      url: "https://github.com/mhazizk",
+    },
+    {
+      name: "linkedin",
+      url: "https://linkedin.com/in/mhazizk",
+    },
+    {
+      name: "twitter",
+      url: "https://twitter.com/mhazizk",
+    },
+  ];
+
   return (
     <section className="flex relative flex-col items-center justify-center p-24 w-screen min-h-screen">
       <video
@@ -51,8 +67,14 @@ const HelloWorld = () => {
           style={{
             fontSize: "1.5rem",
             color: "yellow",
+            paddingBottom: "1rem",
           }}
         />
+        <div className="flex flex-row space-x-4">
+          {privateLinks.map(({ name, url }) => {
+            return <IconButton icon={name} url={url} />;
+          })}
+        </div>
       </div>
       <div
         style={{
