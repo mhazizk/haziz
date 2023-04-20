@@ -72,7 +72,7 @@ const HelloWorld = () => {
         />
         <div className="flex flex-row space-x-4">
           {privateLinks.map(({ name, url }) => {
-            return <IconButton icon={name} url={url} />;
+            return <IconButton key={name} icon={name} url={url} />;
           })}
         </div>
       </div>
